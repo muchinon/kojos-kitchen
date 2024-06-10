@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=q, initial-scale=1.0" />
+  <title>Kojo's Kitchen</title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body onload="slider()">
+  <div>
+    <header>
+      <div class="header">
+        <div>
+          <a href="" id="logo"><img src="./img/logo.png" alt="logo" /></a>
+        </div>
+
+        <nav>
+          <ul id="ul">
+            <li><a href="#" class="menus">Home</a></li>
+            <li><a href="#" class="menus">About</a></li>
+            <li><a href="#" class="menus">Reservation</a></li>
+            <li><a href="#" class="menus">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="hero-sec">
+        <div class="header-images">
+          <h2>We Love Delicious Food</h2>
+          <p>
+            At Kojo's Kitchen, we believe in the power of food to bring people together. Our welcoming ambiance is
+            perfect for family gatherings, <br />
+            intimate dinners, and special celebrations. We also offer catering services to make your events memorable
+            with our delicious offerings.
+          </p>
+
+          <div class="header-pics">
+            <img src="./img/cho2-modified.png" alt="" />
+            <img src="./img/chop3-modified.png" alt="" />
+            <img src="./img/cho4-modified.png" alt="" />
+          </div>
+
+          <div><button class="btn">Book a table</button>
+          </div>
+        </div>
+
+
+
+
+        <div class="slider">
+          <img src="./img/cho4.jpg" alt="" id="slider-img" />
+        </div>
+      </div>
+  </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="waakye"><img src="./img/restaurant2.jpg" alt="" /></div>
+
+    <div class="About">
+      <h3>About</h3>
+
+      <h2>Welcome to Kojo's Kitchen</h2>
+
+      <p>
+        Welcome to Kojo's Kitchen, where culinary passion meets cultural heritage. At Kojo's Kitchen, we are dedicated
+        to bringing you an authentic taste of traditional African cuisine, infused with contemporary twists to delight
+        your palate. <br> Founded by Kojo Mensah, a chef with deep roots in West African culinary traditions, our
+        mission is
+        to create a dining experience that celebrates the rich, diverse flavors of Africa.
+
+
+      </p>
+
+      <h4>Special Recipe</h4>
+
+      <div class="recipe">
+        <img src="./img/cho2.jpg" alt="" />
+        <img src="./img/chop5.jpg" alt="" />
+        <img src="./img/chop6.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+
+    <h3>Our Menu</h3>
+
+    <div class="our-menu">
+      <div class="our-menu-img">
+        <div><img src="./img/cho2-modified.png" alt="" /></div>
+        <div class="our-menu-texts">
+          <h4>Grilled Beef with potatoes</h4>
+          <p>Meat, Potatoes, Rice, Tomatoe</p>
+        </div>
+      </div>
+
+      <div class="our-menu-img">
+        <div><img src="./img/chop3-modified.png" alt="" /></div>
+        <div class="our-menu-texts">
+          <h4>Grilled Beef with potatoes</h4>
+          <p>Meat, Potatoes, Rice, Tomatoe</p>
+        </div>
+      </div>
+
+      <div class="our-menu-img">
+        <div><img src="./img/cho4-modified.png" alt="" /></div>
+        <div class="our-menu-texts">
+          <h4>Grilled Beef with potatoes</h4>
+          <p>Meat, Potatoes, Rice, Tomatoe</p>
+        </div>
+      </div>
+
+      <div class="our-menu-img">
+        <div><img src="./img/chop3-modified.png" alt="" /></div>
+        <div class="our-menu-texts">
+          <h4>Grilled Beef with potatoes</h4>
+          <p>Meat, Potatoes, Rice, Tomatoe</p>
+        </div>
+      </div>
+
+      <div class="our-menu-img">
+        <div><img src="./img/cho2-modified.png" alt="" /></div>
+        <div class="our-menu-texts">
+          <h4>Grilled Beef with potatoes</h4>
+          <p>Meat, Potatoes, Rice, Tomatoe</p>
+        </div>
+      </div>
+
+      <div class="our-menu-img">
+        <div><img src="./img/chop3-modified.png" alt="" /></div>
+        <div class="our-menu-texts">
+          <h4>Grilled Beef with potatoes</h4>
+          <p>Meat, Potatoes, Rice, Tomatoe</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <script>
+    var slideimg = document.getElementById("slider-img");
+
+    var images = [
+      "./img/cho4.jpg",
+      "./img/cho2.jpg",
+      "./img/cho3.jpg",
+      "./img/cho4.jpg",
+    ];
+
+    var len = images.length;
+    var i = 0;
+
+    function slider() {
+      if (i >= len - 1) {
+        i = 0;
+      }
+
+      slideimg.src = images[i];
+      i++;
+      setTimeout(slider, 3000);
+    }
+  </script>
+
+  </div>
+</body>
+
+</html>

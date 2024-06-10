@@ -1,0 +1,33 @@
+const btn = document.getElementById('btn');
+btn.onclick = function () {
+    const name = prompt('Enter your full name');
+    document.getElementById('name').innerText = name;
+}
+
+//Variables
+const pi = 3.14;
+let username = 'berial';
+let age = 12;
+let present = false;
+
+// Objects
+const person = {
+    username: 'berial',
+    age: 12,
+    present: false,
+    child: {
+        name: 'Duster',
+        age: 200,
+        friend: {
+            name: 'Cockroach',
+            age: 4000
+
+        }
+
+    }
+}
+console.log(person.username);
+person.age = 29;
+console.log(person);
+
+Strings in JavaScript

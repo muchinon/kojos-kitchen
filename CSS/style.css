@@ -10,7 +10,7 @@ a {
 #logo img {
   width: 150px;
   height: auto;
-  margin-left: 7rem;
+  margin-left: 5rem;
 }
 
 #ul {
@@ -20,6 +20,7 @@ a {
   font-size: 12pt;
   margin-top: 50px;
   list-style: none;
+  
 }
 
 .menus {
@@ -30,6 +31,7 @@ a {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 30px;
+  align-items: flex-start;
 }
 
 header {

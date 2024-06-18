@@ -10,6 +10,7 @@ a {
 #logo img {
   width: 150px;
   height: auto;
+  margin-left: 7rem;
 }
 
 #ul {
@@ -25,9 +26,10 @@ a {
   text-decoration: none;
   color: black;
   display: inline;
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight: 2000;
-  font-size: 20px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30px;
 }
 
 header {
@@ -54,6 +56,7 @@ header {
   width: 90%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5%;
 }
 
 .header {
@@ -70,15 +73,22 @@ header {
   margin-top: 5rem;
   margin-bottom: 7rem;
   width: 30%;
+
 }
 
 .header-images h2 {
   font-size: 20pt;
   margin-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .header-images p {
   font-size: 10pt;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .header-pics {
@@ -127,7 +137,10 @@ header {
 
 .About h3{
   font-size: 17pt;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30pt;
   color: red;
   opacity: 60%;
   margin-top: 2rem;
@@ -136,6 +149,15 @@ header {
 
 .About h2{
   margin-bottom: 2rem;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.About p{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .About h4{
@@ -166,14 +188,23 @@ header {
 .waakye img {
   width: 60%;
   margin-left: 10rem;
+  border-radius: 5%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+
 }
 
 .our-menu img {
@@ -190,23 +221,98 @@ header {
   padding-top: 2rem;
 }
 
+.our-menu-texts h4,p {
+font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .section {
   padding-left: 3rem;
   padding-right: 3rem;
   margin-top: 5rem;
+  height: 100vh;
 }
 
 
 
 .section h3 {
   text-align: center;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 30pt;
   color: red;
   opacity: 60%;
   margin-top: 2rem;
   margin-bottom: 4rem;
+  
 }
 
 .footer {
-  background-color: #d93434;
+  /* max-width: 1664px; */
+  background-color: #000000;
+  margin: auto;
+  height: 50vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+
+.ul {
+  list-style: none;
+}
+
+.footer h4 {
+  color: rgba(255, 0, 0, 0.651);
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 25pt;
+}
+
+.footer-menus {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding-top: 2rem;
+  padding-left: 7rem;
+
+}
+
+.footer-menus ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+
+.footer-menus p {
+  color: white;
+}
+
+.footer-logo {}
+
+.footer-logo img {
+  width: 200px;
+  margin-top: -3rem;
+
+}
+
+.footer-line {
+  height: 1px;
+  width: 85%;
+  background-color: grey;
+  margin-left: 6rem;
+}
+
+.copyright-text {
+  color: white;
+  margin-top: 2rem;
+  margin-left: 6rem;
+
 }
